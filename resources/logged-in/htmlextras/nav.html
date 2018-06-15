@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+<meta charset='utf-8'>
+
+<style type='text/css'>
+header {
+	z-index: 9999;
+}
+nav {
+	color: #f39c12;
+	width: 100vw;
+	padding: 5vw;
+	font-weight: 800;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	float: left;
+}
+.fixed-nav {
+	background-color: rgba(0, 0, 0,0.9);
+	position: fixed;
+	margin: 0px;
+}
+.regular-nav {
+	background-color: transparent;
+}
+nav ul {
+	list-style: none;
+	text-align: center;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 5%;
+	font-size: 20px;
+	padding: 1.7vw;
+	border: 1.5px solid rgba(243, 156, 18,0.3);
+	transition-duration: 0.2s;
+	float: left;
+}
+nav ul li:hover {
+	border: 1.5px solid #f39c12;
+	color: #f39c12;
+	cursor: pointer;
+}
+nav ul li:active {
+	border: 1.5px solid #e67e22;
+	color: #e67e22;
+	cursor: pointer;
+}
+nav ul li a {
+	font-weight: 700;
+	color: #f39c12;
+	text-decoration: none;
+}
+a:hover {
+	cursor: pointer;
+}
+.js-goto-myaccount:hover {
+	border: 1.5px solid transparent;
+	color: white;
+}
+.js-goto-myaccount{
+	float: none;
+	border: none;
+	margin: 0px;
+	-webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+	padding: 1.7vw 4.2vw;
+  /*background-color: #3498db;*/
+  background-color: transparent;
+  color: #f39c12;
+  font-weight: 700;
+  border: 1.5px solid rgba(243, 156, 18,0.3);
+}
+.js-goto-myaccount:hover {
+	border: none;
+	background-color: #f39c12;
+	color: white;
+	border: 1.5px solid #f39c12;
+}
+.js-goto-myaccount:hover{
+	color: white;
+}
+.js-goto-myaccount:active {
+	border: none;
+	background-color: #e67e22;
+	color: white;
+	border: 1.5px solid #f39c12;
+}
+#menu-img{
+	display: none;
+	visibility: hidden;
+	width: 50px;
+	height: auto;
+	margin-top: 1vh;
+	float: left;
+	margin-right: 100vw;
+	margin-bottom: 2vh;
+}
+.menu-disabled {
+	display: none;
+	visibility: hidden;
+}
+.menu-enabled {
+	display: block;
+	visibility: visible;
+}
+.dropdown-menu li{
+	width: 150px;
+	padding: 1.7vw;
+	margin-left: 0px;
+	font-size: 20px;
+	display: block;
+}
+.dropdown-menu {
+	width: 150px;
+	float: left;
+	position: relative;
+	display: block;
+}
+.dropdown-links {
+	display: none;
+	border: none;
+	background-color: rgba(0,0,0,0.9);
+	position: absolute;
+	left: 0px;
+}
+@media screen and (max-width: 768px){
+	nav ul li {
+		width: 150px;
+		margin-bottom: 2vh;
+		padding: 1.7vw;
+		margin-left: 0px;
+		margin-right: 500px;
+		font-size: 20px;
+	}
+	.js-goto-login {
+		padding: 1.7vw;
+	}
+	#menu-img {
+		visibility: visible;
+		display: inline;
+	}
+	.home-section {
+		height: 130vh;
+	}
+}
+</style>
+<script>
+$(document).ready(function(){
+	$(".dropdown-menu").hover(function(){
+	    $(".dropdown-links").slideDown();;
+	    }, function(){
+	    $(".dropdown-links").slideUp();;
+	});
+});
+</script>
+</head>
+
+<header>
+	<nav class='regular-nav'>
+		<ul>
+			<a class="menu-button"><img alt='menu bar' src='../resources/img/icons/orange-icons/open-nav.png' class='js-open-nav' id='menu-img'></a>
+			<div class='js-main-nav'>
+			<li class='js-goto-home'><a>Home</a></li>
+			<li class='js-goto-focusarea'><a>Workspace</a></li>
+			<li class='js-goto-tasks'><a>Today's Tasks</a></li>
+			<li class='js-goto-calendar'><a>Calendar</a></li>
+	    <div class='dropdown-menu'>
+				<li class="js-goto-myaccount">My Account</li>
+				<span class='dropdown-links'>
+					<li class='js-goto-logout'><a>Logout</a></li>
+					<li class='js-goto-profile'><a>Profile</a></li>
+					<li class='js-goto-settings'><a>Settings</a></li>
+				</span>
+			</div>
+		</ul>
+	</nav>
+</header>

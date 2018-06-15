@@ -1,0 +1,47 @@
+* {
+	font-family: "Overpass",'Lato',sans-serif;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+html, body {
+	background-color: #e8e8e8;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+::selection {
+	color: white;
+	background-color: #f39c12;
+}
+
+.container {
+  line-height: 25px;
+	width: 100%;
+	background-color: #e8e8e8;
+	color: black;
+	float: justify;
+	font-weight: normal;
+	min-height: 70vh;
+	font-family: "Overpass",'Lato',sans-serif;
+}
+.paragraph{
+	font-family: "Overpass","Lato",sans-serif;
+}
+nav {
+	background-color: white;
+}
+
+.underline-link{
+    color: #e67e22;
+    text-decoration: none;
+		border-bottom: 1px solid #e67e22;
+    float: center;
+    -webkit-transition-duration: 0.5s;
+}
+.underline-link:hover{
+    color: #e8e8e8;
+		border: none;
+    background-color: #e67e22;
+    text-decoration: none;
+}

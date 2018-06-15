@@ -1,0 +1,42 @@
+section {
+	min-height: 100vh;
+	width: 100vw;
+}
+.home-section {
+	margin: 0px;
+	padding: 0px;
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../img/desk.jpeg');
+	background-size: 100vw auto;
+	border: none;
+	min-height: 100vh;
+}
+
+.three-col {
+	width: 25%;
+	margin: 1.04166666666%;
+	padding: 3.125%;
+	float: left;
+	text-align: center;
+	color: white;
+	font-size: 200%;
+	line-height: 150%;
+	background-color: #e67e22;
+	transition-duration: 0.2s;
+}
+.three-col:hover {
+	cursor: pointer;
+	background-color: #e16a00;
+}
+.three-col img {
+	width: 50%;
+}
+.three-col h2{
+	margin-bottom: 5%;
+}
+
+/* Mobile Friendly */
+@media screen and (max-width: 981px) {
+	.home-section {
+		background-size: auto 100%;
+	}
+}

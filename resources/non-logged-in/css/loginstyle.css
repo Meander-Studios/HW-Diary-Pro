@@ -1,0 +1,65 @@
+body {
+	background-color: #34495e;
+}
+.login-section {
+	vertical-align: center;
+	text-align: center;
+	float: center;
+	color: white;
+}
+.login-section input[type=text],.login-section input[type=password] {
+	border: 1.5px solid rgba(243, 156, 18,0.3);
+  transition-duration: 0.2s;
+	font-family: "Overpass", 'Lato',sans-serif;
+	font-size: 130%;
+	padding: 1vw 1.5vw;
+  margin: 8px 0px;
+  background-color: transparent;
+  color: white;
+}
+.login-section input[type=text]:focus,.login-section input[type=password]:focus{
+	outline: none;
+	border: 1.5px solid #f39c12;
+}
+.login-section form h2 {
+	font-size: 130%;
+}
+.login-section .button {
+	border: 1.5px solid rgba(243, 156, 18,0.3);
+	transition-duration: 0.2s;
+	background-color: transparent;
+	margin-top: 3%;
+  cursor: pointer;
+  color: #f39c12;
+  padding: 1.7vw 2.3vw;
+  text-align: center;
+  text-decoration: none;
+  font-size: 120%;
+  font-weight: 700;
+}
+.login-section .button:hover{
+	outline: none;
+	border: 1.5px solid #f39c12;
+	color: #f39c12;
+	cursor: pointer;
+}
+.login-section .button:active{
+	outline: none;
+	border: 1.5px solid #e67e22;
+	color: #e67e22;
+	cursor: pointer;
+}
+.login-section h3 {
+	margin-top: 5vh;
+	font-weight: 700;
+	font-size: 120%;
+	font-family: "Overpass",'Lato',sans-serif;
+}
+.login-section h1 {
+	padding-top: 7vw;
+}
+@media screen and (max-width: 704px) {
+	.login-section .button {
+		font-size: 100%;
+	}
+}

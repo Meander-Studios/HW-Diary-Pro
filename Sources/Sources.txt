@@ -1,0 +1,59 @@
+=== BIBLIOGRAPHY FOR HW DIARY PRO ===
+
+Icons Designed By Freepik From Flaticon
+Icons Designed By Madebyoliver From Flaticon
+
+====================
+
+Photos By:
+
+Tookapic From Pexels
+Pixabay From Pexels
+Startup Stock Photos From Pexels
+Kaboompics // Karolina From Pexels
+Negative Space From Pexels
+Unsplash From Pexels
+
+====================
+
+Logo By Designapp.io, Freepik From Flaticon and Merriweather Typeface
+
+====================
+
+Music By NoCopyrightSounds at www.nocopyrightsounds.co.uk
+
+====================
+
+JQUERY Plugins Used:
+Waypoint
+iCheck
+Noty
+Youtube Pop Up
+FitText
+
+====================
+
+PHP Libraries and Code Snippets Used:
+Verifying Password Complexity Snippet from code.runnable.com by gtsolutions
+
+====================
+Fonts By:
+Overpass Via Google Fonts
+
+====================
+
+(c) 2016 - 2017 Meander Studios Inc.
+
+====================
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
